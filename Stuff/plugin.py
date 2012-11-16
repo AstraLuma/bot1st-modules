@@ -112,21 +112,21 @@ class Stuff(callbacks.Plugin):
         else:
             irc.reply('Death? What strange concepts you pitiful humans create.')
     
-    @wrap()
-    def ddate(self, irc, msg, args):
-        """takes no arguments"""
-        args = ['ddate']
-        inst = subprocess.Popen(args, stdout=subprocess.PIPE)
-        r = inst.stdout
-        try:
-            lines = r.readlines()
-            lines = map(str.rstrip, lines)
-            lines = filter(None, lines)
-            if lines:
-                irc.replies(lines, joiner=' ')
-        finally:
-            r.close()
-            inst.wait()
+#    @wrap()
+#    def ddate(self, irc, msg, args):
+#        """takes no arguments"""
+#        args = ['ddate']
+#        inst = subprocess.Popen(args, stdout=subprocess.PIPE)
+#        r = inst.stdout
+#        try:
+#            lines = r.readlines()
+#            lines = map(str.rstrip, lines)
+#            lines = filter(None, lines)
+#            if lines:
+#                irc.replies(lines, joiner=' ')
+#        finally:
+#            r.close()
+#            inst.wait()
     
     @wrap()
     def raptors(self, irc, msg, args):

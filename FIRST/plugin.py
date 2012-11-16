@@ -47,9 +47,9 @@ def formatstamp(ts):
 class FIRST(callbacks.Plugin):
     """Various commands for FIRST"""
     callBefore = ('Factoids', 'MoobotFactoids', 'Infobot', 'Karma')
-    KICKOFF = datetime.datetime(2010, 1, 9, 10, 0, 0)
+    KICKOFF = datetime.datetime(2013, 1, 5, 10, 0, 0)
     SHIP = datetime.datetime(2010, 2, 23, 0, 0, 0)
-    NATS = datetime.datetime(2010, 3, 4, 14, 0, 0)
+    NATS = datetime.datetime(2013, 4, 24, 14, 0, 0)
     CALLS = {
         'GALI-': 'LEO!',
         'ARCHI-': 'MEDES!',
